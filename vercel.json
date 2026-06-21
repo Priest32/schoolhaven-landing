@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/app", "destination": "https://myschool-demo.vercel.app" },
+    { "source": "/app/:path*", "destination": "https://myschool-demo.vercel.app/:path*" }
+  ]
+}
