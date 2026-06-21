@@ -203,11 +203,27 @@
   .shot-bar { background: #ece9e1; padding: 9px 14px; display: flex; gap: 6px; align-items: center; }
   .shot-bar span { width: 9px; height: 9px; border-radius: 50%; background: #d3cfc4; }
   .shot-img {
-    aspect-ratio: 16/10; background: linear-gradient(135deg, var(--sage), #fff);
-    display: flex; align-items: center; justify-content: center; color: var(--charcoal-soft); font-size: 13px;
-    flex-direction: column; gap: 8px;
-  }
-  .shot-img .ph-icon { font-size: 32px; opacity: 0.4; }
+  aspect-ratio: 16/10;
+  background: linear-gradient(135deg, var(--sage), #fff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--charcoal-soft);
+  flex-direction: column;
+  gap: 8px;
+}
+
+.shot-image {
+  width: 100%;
+  display: block;
+  aspect-ratio: 16/10;
+  object-fit: cover;
+}
+
+.shot-img .ph-icon {
+  font-size: 32px;
+  opacity: 0.4;
+}
   @media (max-width: 760px) { .showcase-grid { grid-template-columns: 1fr; } }
 
   /* ===== Why / trust ===== */
@@ -407,10 +423,49 @@
       <h2>What it looks like day to day.</h2>
     </div>
     <div class="showcase-grid">
-      <div class="shot"><div class="shot-bar"><span></span><span></span><span></span></div><div class="shot-img"><span class="ph-icon">📊</span>Admin dashboard — screenshot coming soon</div></div>
-      <div class="shot"><div class="shot-bar"><span></span><span></span><span></span></div><div class="shot-img"><span class="ph-icon">🧾</span>Fees & receipts — screenshot coming soon</div></div>
-      <div class="shot"><div class="shot-bar"><span></span><span></span><span></span></div><div class="shot-img"><span class="ph-icon">📋</span>Report cards — screenshot coming soon</div></div>
-      <div class="shot"><div class="shot-bar"><span></span><span></span><span></span></div><div class="shot-img"><span class="ph-icon">📨</span>SMS broadcast — screenshot coming soon</div></div>
+      <div class="shot">
+  <div class="shot-bar">
+    <span></span><span></span><span></span>
+  </div>
+  <img
+    src="images/screenshot-dashboard.png"
+    alt="SchoolHaven Dashboard"
+    class="shot-image"
+  >
+</div>
+
+<div class="shot">
+  <div class="shot-bar">
+    <span></span><span></span><span></span>
+  </div>
+  <img
+    src="images/screenshot-fees.png"
+    alt="Fees Management"
+    class="shot-image"
+  >
+</div>
+
+<div class="shot">
+  <div class="shot-bar">
+    <span></span><span></span><span></span>
+  </div>
+  <img
+    src="images/screenshot-results.png"
+    alt="Results and Report Cards"
+    class="shot-image"
+  >
+</div>
+
+<div class="shot">
+  <div class="shot-bar">
+    <span></span><span></span><span></span>
+  </div>
+  <img
+    src="images/screenshot-sms-broadcast.png"
+    alt="SMS Broadcast"
+    class="shot-image"
+  >
+</div>
     </div>
   </div>
 </section>
